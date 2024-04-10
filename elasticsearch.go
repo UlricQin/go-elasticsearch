@@ -391,9 +391,9 @@ func (c *BaseClient) doProductCheck(f func() error) error {
 
 // genuineCheckHeader validates the presence of the X-Elastic-Product header
 func genuineCheckHeader(header http.Header) error {
-	if header.Get("X-Elastic-Product") != "Elasticsearch" {
-		return errors.New(unknownProduct)
-	}
+	// if header.Get("X-Elastic-Product") != "Elasticsearch" {
+	// 	return errors.New(unknownProduct)
+	// }
 	return nil
 }
 
